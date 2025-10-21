@@ -1,130 +1,162 @@
+
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ссылки и формы</title>
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>гиперссылки</h1>
-    
-    <ul>
-        <li><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-        
-        <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
-        
-        <li><a href="https://kubsu.ru/"><img src="https://via.placeholder.com/100x50" alt="Ссылка-изображение"></a></li>
-        
-        <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
-        
-        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-        
-        <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
-        
-        <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
-        
-        <li><a href="https://example.com/page?id=123">Ссылка с параметром id в URL</a></li>
-        
-        <li><a href="current-page.html">Относительная на страницу в текущем каталоге</a></li>
-        
-        <li><a href="about/page.html">Относительная на страницу в каталоге about</a></li>
-        
-        <li><a href="../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
-        
-        <li><a href="../../page.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
-        
-        <li>Это <a href="https://example.com">контекстная ссылка</a> в тексте абзаца</li>
-        
-        <li><a href="https://example.com/page#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
-        
-        <li>
-            <img src="https://via.placeholder.com/300x100" alt="Карта-изображение" usemap="#image-map">
-            <map name="image-map">
-                <area shape="rect" coords="0,0,150,100" href="https://example.com/rect" alt="Прямоугольная область">
-                <area shape="circle" coords="225,50,25" href="https://example.com/circle" alt="Круглая область">
-            </map>
-        </li>
-        
-        <li><a href="">Ссылка с пустым href</a></li>
-        
-        <li><a>Ссылка без href</a></li>
-        
-        <li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-        
-        <li><a href="https://example.com" rel="noindex">Запрещенная для индексации поисковиками</a></li>
-        
-        <li>
-            <ol>
-                <li><a href="https://example.com/1" title="Первая ссылка">Первая ссылка с title</a></li>
-                <li><a href="https://example.com/2" title="Вторая ссылка">Вторая ссылка с title</a></li>
-                <li><a href="https://example.com/3" title="Третья ссылка">Третья ссылка с title</a></li>
-            </ol>
-        </li>
-        
-        <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
-    </ul>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" width="65" alt="Логотип">
+                <p class="logo-title">swagshit322.github.io</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav">
+                    <li><a href="#!">Главная</a></li>
+                    <li><a href="#!">О нас</a></li>
+                    <li><a href="#!">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h2 id="form">формы</h2>
-    
-    <form action="#" method="post">
-        <div>
-            <label for="fio">ФИО:</label>
-            <input type="text" id="fio" name="fio" required>
-        </div>
-        
-        <div>
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div>
-            <label for="birthdate">Дата рождения:</label>
-            <input type="date" id="birthdate" name="birthdate" required>
-        </div>
-        
-        <div>
-            <label>Пол:</label>
-            <input type="radio" id="male" name="gender" value="male" required>
+```
+<main class="main">
+    <!-- Таблица -->
+    <div class="table-container">
+        <h2 class="text-tabl">Таблица</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td class="tab">Level 1</td>
+                    <td>Level 2</td>
+                    <td class="tab">Level 3</td>
+                    <td>Level 4</td>
+                    <td class="tab">Level 5</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tab" rowspan="6">privet</td>
+                    <td rowspan="3">poka</td>
+                    <td class="tab" rowspan="3">privet</td>
+                    <td>poka</td>
+                    <td class="tab">privet</td>
+                </tr>
+                <tr>
+                    <td>poka</td>
+                    <td class="tab">privet</td>
+                </tr>
+                <tr>
+                    <td>poka</td>
+                    <td class="tab">privet</td>
+                </tr>
+                <tr>
+                    <td>poka</td>
+                    <td class="tab">privet</td>
+                    <td>poka</td>
+                    <td class="tab">privet</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">poka</td>
+                    <td class="tab" rowspan="2">privet</td>
+                    <td>poka</td>
+                    <td class="tab">privet</td>
+                </tr>
+                <tr>
+                    <td>poka</td>
+                    <td class="tab">privet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Ссылки -->
+    <div class="links">
+        <h2>Список гиперссылок</h2>
+        <ul class="hyperlinks">
+            <li><a href="http://kubsu.ru">абсолютная гиперссылка на кубик</a></li>
+            <li><a href="https://kubsu.ru">https гиперссылка на кубик</a></li>
+            <li><a href=""><img src="image.jpg" alt="image" width="200"></a></li>
+            <li><a href="/vnutr.html">внутренняя страница</a></li>
+            <li><a href="/">главная страница</a></li>
+            <li><a href="#fio">фрагмент</a></li>
+            <li><a href="?name=malik&zanashih=5252&bebra=True">ссылка с 3 параметрами</a></li>
+            <li><a href="?id=67">ссылка с id</a></li>
+            <li><a href="./vnutr.html">относительная ссылка в текущем каталоге</a></li>
+            <li><a href="./about/vnutr.html">относительная ссылка в каталоге about</a></li>
+            <li><a href="../vnutr.html">ссылка уровнем выше</a></li>
+            <li><a href="../../vnutr.html">ссылка двумя уровнями выше</a></li>
+            <li>Загрузить Minecraft и серверное ПО | Minecraft 
+                <a href="/vnutr.html">Minecraft</a>
+            </li>
+            <li><a href="https://www.minecraft.net/ru-ru/download">ссылка на фрагмент стороннего сайта</a></li>
+            <li><img src="image.jpg" usemap="#plant" width="200">
+                <map name="plant">
+                    <area shape="rect" coords="0,0,82,126" href="https://kubsu.ru">
+                    <area shape="circle" coords="129,161,129" href="https://kubsu.ru">
+                    <area shape="poly" coords="200,32,240,32,240,42,210,64,210,74,200,32" href="https://kubsu.com">
+                </map>
+            </li>
+            <li><a href="">ссылка с пустым href</a></li>
+            <li><a>ссылка без href</a></li>
+            <li><a href="https://kubsu.ru" rel="nofollow">ссылка с nofollow</a></li>
+            <li><no-index><a href="https://kubsu.ru">запрещённая для индексации</a></no-index></li>
+            <ol>
+                <li><a href="https://kubsu.ru" title="сайт">сайт</a></li>
+                <li><a href="https://kubsu.ru" title="другой сайт">другой сайт</a></li>
+            </ol>
+            <li><a href="ftp://admin:1234@google.com/index.doc">ссылка на FTP файл</a></li>
+        </ul>
+    </div>
+
+    <!-- Форма -->
+    <div class="form">
+        <h2>Форма</h2>
+        <form>
+            <label>ФИО <input name="fio" type="text" id="fio"></label>
+            <label>Телефон <input name="phone" type="tel"></label>
+            <label>Email <input name="email" type="email"></label>
+            <label>Дата рождения <input name="date" type="date"></label>
+            
+            <p>Пол:</p>
             <label for="male">Мужской</label>
-            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="male" name="gender" value="male" checked>
             <label for="female">Женский</label>
-        </div>
-        
-        <div>
-            <label for="language">Любимый язык программирования:</label>
-            <select id="language" name="language" multiple size="6">
-                <option value="pascal">Pascal</option>
-                <option value="c">C</option>
-                <option value="cpp">C++</option>
-                <option value="javascript">JavaScript</option>
-                <option value="php">PHP</option>
-                <option value="python">Python</option>
-                <option value="java">Java</option>
-                <option value="haskel">Haskel</option>
-                <option value="clojure">Clojure</option>
-                <option value="prolog">Prolog</option>
-                <option value="scala">Scala</option>
-            </select>
-        </div>
-        
-        <div>
-            <label for="bio">Биография:</label>
-            <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
-        </div>
-        
-        <div>
-            <input type="checkbox" id="agreement" name="agreement" required>
-            <label for="agreement">С контрактом ознакомлен(а)</label>
-        </div>
-        
-        <div>
+            <input type="radio" id="female" name="gender" value="female"><br>
+
+            <label>Любимый язык программирования
+                <select name="lang[]" multiple>
+                    <option value="1">Pascal</option>
+                    <option value="2">C</option>
+                    <option value="3">C++</option>
+                    <option value="4">JavaScript</option>
+                    <option value="5">PHP</option>
+                    <option value="6">Python</option>
+                    <option value="7">Java</option>
+                    <option value="8">Haskel</option>
+                    <option value="9">Clojure</option>
+                    <option value="10">Prolog</option>
+                    <option value="11">Scala</option>
+                </select>
+            </label>
+
+            <label>Биография <textarea name="biography"></textarea></label>
+            <label><input type="checkbox"> С контрактом ознакомлен</label>
             <button type="submit">Сохранить</button>
-        </div>
-    </form>
+        </form>
+    </div>
+</main>
+
+<footer>
+    &copy; Малик Тлекемпашев
+</footer>
+```
+
 </body>
 </html>
