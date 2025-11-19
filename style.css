@@ -1,344 +1,106 @@
-/* ===== ОБЩИЕ СТИЛИ ===== */
-
-/* Убираем стандартные отступы у всех элементов */
-* {
-    margin: 0;          /* внешние отступы */
-    padding: 0;         /* внутренние отступы */
-    box-sizing: border-box; /* чтобы padding и border включались в ширину элемента */
-}
-
-/* Стили для всего тела страницы */
+/* Сбросы и базовые стили */
 body {
-    font-family: Arial, sans-serif; /* шрифт текста */
-    line-height: 1.6;               /* межстрочный интервал */
-    color: #333;                    /* цвет текста (темно-серый) */
-    background-color: #f4f4f4;      /* цвет фона (светло-серый) */
-    min-height: 100vh;              /* минимальная высота на весь экран */
-    display: flex;                  /* flex-контейнер */
-    flex-direction: column;         /* расположение в колонку */
+margin: 0;
+font-family: Arial, sans-serif;
 }
 
-/* ===== ШАПКА САЙТА ===== */
+p, li {
+margin: 5px 0;
+}
+
 header {
-    background-color: #1d354d;      /* темно-синий фон */
-    color: white;                   /* белый текст */
-    padding: 1rem 0;               /* отступ сверху и снизу 1rem */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* тень под шапкой */
-    width: 100%;                   /* ширина 100% */
+background-color: #1E90FF;
+padding: 20px;
+margin-bottom: 20px;
+color: white;
 }
 
-/* Контейнер для содержимого шапки */
-.header {
-    max-width: 1200px;             /* максимальная ширина */
-    margin: 0 auto;                /* центрирование по горизонтали */
-    display: flex;                 /* flex-контейнер для расположения элементов в строку */
-    justify-content: space-between; /* логотип слева, меню справа */
-    align-items: center;           /* выравнивание по вертикали по центру */
-    padding: 0 2rem;              /* отступы слева и справа */
-    width: 100%;                  /* ширина 100% */
-}
-
-/* Блок с логотипом */
 .logo {
-    display: flex;                 /* flex-контейнер */
-    align-items: center;           /* выравнивание элементов по центру */
-    gap: 1rem;                    /* расстояние между элементами */
-    /* Логотип автоматически прижимается к левому краю благодаря justify-content: space-between */
+font-weight: bold;
 }
 
-/* Название сайта рядом с лого */
-.logo-title {
-    font-size: 1.2rem;            /* размер шрифта */
-    font-weight: bold;            /* жирный шрифт */
-}
-
-/* Навигационное меню */
-.navbar {
-    /* Меню автоматически прижимается к правому краю благодаря justify-content: space-between */
-}
-
-.navbar ul {
-    display: flex;                /* расположение пунктов меню в строку */
-    list-style: none;            /* убираем маркеры списка */
-    gap: 2rem;                   /* расстояние между пунктами меню */
-    margin: 0;                   /* убираем внешние отступы */
-    padding: 0;                  /* убираем внутренние отступы */
-}
-
-/* Ссылки в меню */
-.navbar a {
-    color: white;                /* белый цвет текста */
-    text-decoration: none;       /* убираем подчеркивание */
-    padding: 0.5rem 1rem;       /* внутренние отступы */
-    border-radius: 4px;         /* скругленные углы */
-    transition: background-color 0.3s; /* плавное изменение фона за 0.3 секунды */
-    white-space: nowrap;        /* запрет переноса текста */
-}
-
-/* Эффект при наведении на ссылку */
-.navbar a:hover {
-    background-color: #34495e;   /* меняем цвет фона при наведении */
-}
-
-/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
-.main {
-    max-width: 1200px;           /* максимальная ширина */
-    margin: 2rem auto;           /* отступ сверху и центрирование */
-    padding: 0 2rem;             /* отступы слева и справа */
-    display: flex;               /* flex-контейнер */
-    flex-direction: column;      /* расположение элементов в колонку */
-    gap: 3rem;                   /* расстояние между блоками */
-    flex: 1;                     /* занимает всё доступное пространство */
-    width: 100%;                 /* ширина 100% */
-}
-
-/* ===== ТАБЛИЦА ===== */
-.table-container {
-    background: white;           /* белый фон */
-    padding: 2rem;              /* внутренние отступы */
-    border-radius: 8px;         /* скругленные углы */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* тень вокруг блока */
-}
-
-/* Заголовок таблицы */
-.text-tabl {
-    text-align: center;         /* выравнивание по центру */
-    margin-bottom: 1.5rem;     /* отступ снизу */
-    color: #2c3e50;            /* цвет текста */
-}
-
-/* Сама таблица */
-table {
-    width: 100%;               /* ширина 100% родительского контейнера */
-    border-collapse: collapse; /* объединяем границы ячеек */
-    margin: 0 auto;           /* центрирование таблицы */
-}
-
-/* Границы таблицы, заголовков и ячеек */
-table, th, td {
-    border: 2px solid #34495e; /* сплошная граница толщиной 2px */
-}
-
-/* Стили для заголовков и ячеек */
-th, td {
-    padding: 12px;            /* внутренние отступы */
-    text-align: center;       /* выравнивание текста по центру */
-    vertical-align: middle;   /* выравнивание по вертикали по центру */
-}
-
-/* Шапка таблицы */
-thead {
-    background-color: #34495e; /* темно-синий фон */
-    color: white;             /* белый текст */
-}
-
-/* Выделенные ячейки таблицы */
-.tab {
-    background-color: #ecf0f1; /* светло-серый фон */
-    font-weight: bold;        /* жирный шрифт */
-}
-
-/* Четные строки в теле таблицы */
-tbody tr:nth-child(even) {
-    background-color: #f8f9fa; /* очень светлый серый фон */
-}
-
-/* Эффект при наведении на строку таблицы */
-tbody tr:hover {
-    background-color: #e9ecef; /* меняем фон при наведении */
-}
-
-/* ===== БЛОК С ССЫЛКАМИ ===== */
-.links {
-    background: white;        /* белый фон */
-    padding: 2rem;           /* внутренние отступы */
-    border-radius: 8px;      /* скругленные углы */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* тень */
-}
-
-.links h2 {
-    margin-bottom: 1.5rem;   /* отступ снизу */
-    color: #2c3e50;         /* цвет текста */
-}
-
-/* Список ссылок */
-.hyperlinks {
-    list-style: none;       /* убираем маркеры списка */
-}
-
-/* Каждый элемент списка */
-.hyperlinks li {
-    margin-bottom: 0.8rem;  /* отступ снизу между элементами */
-    padding: 0.5rem;        /* внутренние отступы */
-    border-left: 3px solid #3498db; /* синяя полоса слева */
-    background-color: #f8f9fa; /* светло-серый фон */
-}
-
-/* Ссылки */
-.hyperlinks a {
-    color: #2980b9;         /* синий цвет */
-    text-decoration: none;  /* убираем подчеркивание */
-    transition: color 0.3s; /* плавное изменение цвета за 0.3 секунды */
-}
-
-/* Эффект при наведении на ссылку */
-.hyperlinks a:hover {
-    color: #1a5276;         /* темно-синий цвет при наведении */
-    text-decoration: underline; /* подчеркивание при наведении */
-}
-
-/* Изображения-ссылки */
-.hyperlinks img {
-    border: 2px solid #bdc3c7; /* серая рамка */
-    border-radius: 4px;     /* скругленные углы */
-    transition: transform 0.3s; /* плавное увеличение */
-}
-
-/* Эффект при наведении на изображение */
-.hyperlinks img:hover {
-    transform: scale(1.05); /* увеличиваем изображение на 5% */
-}
-
-/* Нумерованный список внутри блока ссылок */
-.hyperlinks ol {
-    margin-left: 2rem;      /* отступ слева */
-    margin-top: 1rem;       /* отступ сверху */
-}
-
-/* ===== ФОРМА ===== */
-.form {
-    background: white;      /* белый фон */
-    padding: 2rem;         /* внутренние отступы */
-    border-radius: 8px;    /* скругленные углы */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* тень */
-}
-
-.form h2 {
-    margin-bottom: 1.5rem; /* отступ снизу */
-    color: #2c3e50;       /* цвет текста */
-}
-
-/* Сама форма */
-form {
-    display: flex;         /* flex-контейнер */
-    flex-direction: column; /* расположение элементов в колонку */
-    gap: 1.5rem;          /* расстояние между элементами */
-}
-
-/* Поля формы */
-form label {
-    display: flex;         /* flex-контейнер */
-    flex-direction: column; /* расположение в колонку */
-    gap: 0.5rem;          /* расстояние между текстом и полем ввода */
-    font-weight: bold;    /* жирный шрифт для подписей */
-}
-
-/* Поля ввода, выпадающие списки и текстовые области */
-form input, form select, form textarea {
-    padding: 0.8rem;      /* внутренние отступы */
-    border: 2px solid #bdc3c7; /* серая рамка */
-    border-radius: 4px;   /* скругленные углы */
-    font-size: 1rem;      /* размер шрифта */
-    transition: border-color 0.3s; /* плавное изменение цвета рамки */
-}
-
-/* Эффект при фокусе на поле ввода */
-form input:focus, form select:focus, form textarea:focus {
-    outline: none;        /* убираем стандартную обводку */
-    border-color: #0479c7; /* синяя рамка при фокусе */
-}
-
-/* Текстовая область */
-form textarea {
-    min-height: 100px;    /* минимальная высота */
-    resize: vertical;     /* разрешаем изменять размер только по вертикали */
-}
-
-/* Группа радиокнопок */
-form p {
-    margin-bottom: 0.5rem; /* отступ снизу */
-    font-weight: bold;    /* жирный шрифт */
-}
-
-/* Радиокнопки */
-form input[type="radio"] {
-    margin-right: 0.5rem; /* отступ справа */
-}
-
-/* Кнопка отправки формы */
-form button {
-    padding: 1rem 2rem;   /* внутренние отступы */
-    background-color: #2ecc71; /* зеленый фон */
-    color: white;         /* белый текст */
-    border: none;         /* убираем рамку */
-    border-radius: 4px;   /* скругленные углы */
-    font-size: 1.1rem;    /* размер шрифта */
-    cursor: pointer;      /* пальчик при наведении */
-    transition: background-color 0.3s; /* плавное изменение фона */
-}
-
-/* Эффект при наведении на кнопку */
-form button:hover {
-    background-color: #27ae60; /* темно-зеленый фон при наведении */
-}
-
-/* ===== ПОДВАЛ САЙТА ===== */
 footer {
-    background-color: #1d354d; /* темно-синий фон */
-    color: white;             /* белый текст */
-    text-align: left;         /* выравнивание по левому краю */
-    padding: 1.5rem 2rem;    /* внутренние отступы: сверху-снизу 1.5rem, слева-справа 2rem */
-    margin-top: auto;         /* прижимает подвал к низу */
-    width: 100%;             /* ширина 100% */
+margin-top: 40px;
+background-color: #1E90FF;
+padding: 15px;
+font-weight: bold;
+color: white;
 }
 
-/* Контейнер для подвала, чтобы имя было у левого края */
-footer div {
-    max-width: 1200px;       /* максимальная ширина как у основного контента */
-    margin: 0 auto;          /* центрирование */
-    text-align: left;        /* выравнивание текста по левому краю */
+/* Навигация — Mobile First */
+.nav {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column; /* вертикально на мобилках */
 }
 
-/* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ ===== */
-@media (max-width: 768px) {
-    /* На маленьких экранах шапка становится колонкой */
-    .header {
-        flex-direction: column; /* расположение элементов в колонку */
-        gap: 1rem;             /* расстояние между элементами */
-        padding: 0 1rem;       /* меньшие отступы по бокам */
-    }
-    
-    /* Меню навигации тоже в колонку */
-    .navbar ul {
-        flex-direction: column; /* расположение в колонку */
-        gap: 1rem;             /* расстояние между пунктами */
-        text-align: center;    /* выравнивание по центру */
-    }
-    
-    /* Уменьшаем отступы на мобильных */
-    .main {
-        padding: 0 1rem;      /* меньшие отступы по бокам */
-        margin: 1rem auto;    /* меньший отступ сверху */
-    }
-    
-    /* Таблица с горизонтальным скроллом на маленьких экранах */
-    .table-container {
-        overflow-x: auto;     /* горизонтальная прокрутка если не помещается */
-        padding: 1rem;        /* меньшие внутренние отступы */
-    }
-    
-    /* Минимальная ширина таблицы */
-    table {
-        min-width: 600px;     /* таблица не будет сжиматься меньше 600px */
-    }
-    
-    /* Подвал на мобильных */
-    footer {
-        padding: 1rem;        /* меньшие отступы */
-        text-align: center;   /* центрируем текст на мобильных */
-    }
-    
-    footer div {
-        text-align: center;   /* центрируем текст на мобильных */
-    }
+.nav li {
+margin: 8px 0;
+}
+
+.nav a {
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+/*.tab a {
+color: blue;*/
+/* Основной блок */
+.main {
+display: flex;
+flex-direction: column; /* на мобилках — столбец */
+gap: 15px;
+padding: 10px;
+}
+
+.table-container {
+order: 1; /* таблица выше списка */
+}
+.links {
+order: 2;
+}
+.form {
+order: 3;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+td, th {
+border: 1px solid #000;
+padding: 10px;
+}
+.blue-cell {
+    background-color: #ADD8E6;
+}
+/*Media Queries*/
+
+/* Планшеты и ПК */
+@media (min-width: 768px) {
+.nav {
+display: flex;
+flex-direction: row; /* горизонтально */
+justify-content: flex-end;
+gap: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+flex-direction: row; /* три колонки */
+justify-content: space-between;
+}
+
+.table-container, .links, .form {
+flex: 1;
+margin: 10px;
+}
 }
