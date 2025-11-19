@@ -24,140 +24,132 @@
         </div>
     </header>
 
-```
-<main class="main">
-    <div class="container> 
-    <!-- Таблица -->
-    <div class="table-container">
-        <h2 class="text-tabl">Таблица</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td class="tab" colspan="2">Level 1 + Level 2</td>
-                    <td class="tab">Level 3</td>
-                    <td>Level 4</td>
-                    <td class="tab">Level 5</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="tab blue-cell" rowspan="6">blue</td>
-                    <td rowspan="3">test</td>
-                    <td class="tab blue-cell" rowspan="3">blue</td>
-                    <td>test</td>
-                    <td class="tab blue-cell">blue</td>
-                </tr>
-                <tr>
-                    <td>test</td>
-                    <td class="tab blue-cell">blue</td>
-                </tr>
-                <tr>
-                    <td>test</td>
-                    <td class="tab blue-cell">blue</td>
-                </tr>
-                <tr>
-                    <td>test</td>
-                    <td class="tab blue-cell">blue</td>
-                    <td>test</td>
-                    <td class="tab blue-cell">blue</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">test</td>
-                    <td class="tab blue-cell" rowspan="2">blue</td>
-                    <td>test</td>
-                    <td class="tab blue-cell">blue</td>
-                </tr>
-                <tr>
-                    <td>test</td>
-                    <td class="tab blue-cell">blue</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <main class="main">
+        <div class="container"> 
+            <div class="table-container">
+                <h2 class="text-tabl">Таблица</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td class="tab" colspan="2">Level 1 + Level 2</td>
+                            <td class="tab">Level 3</td>
+                            <td>Level 4</td>
+                            <td class="tab">Level 5</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tab blue-cell" rowspan="6">blue</td>
+                            <td rowspan="3">test</td>
+                            <td class="tab blue-cell" rowspan="3">blue</td>
+                            <td>test</td>
+                            <td class="tab blue-cell">blue</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td class="tab blue-cell">blue</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td class="tab blue-cell">blue</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td class="tab blue-cell">blue</td>
+                            <td>test</td>
+                            <td class="tab blue-cell">blue</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">test</td>
+                            <td class="tab blue-cell" rowspan="2">blue</td>
+                            <td>test</td>
+                            <td class="tab blue-cell">blue</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td class="tab blue-cell">blue</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="links">
+                <h2>Список гиперссылок</h2>
+                <ul class="hyperlinks">
+                    <li><a href="http://kubsu.ru">абсолютная гиперссылка на кубик</a></li>
+                    <li><a href="https://kubsu.ru">https гиперссылка на кубик</a></li>
+                    <li><a href=""><img src="image.jpg" alt="image" width="200"></a></li>
+                    <li><a href="/vnutr.html">внутренняя страница</a></li>
+                    <li><a href="/">главная страница</a></li>
+                    <li><a href="#fio">фрагмент</a></li>
+                    <li><a href="?name=malik&zanashih=5252&bebra=True">ссылка с 3 параметрами</a></li>
+                    <li><a href="?id=67">ссылка с id</a></li>
+                    <li><a href="./vnutr.html">относительная ссылка в текущем каталоге</a></li>
+                    <li><a href="./about/vnutr.html">относительная ссылка в каталоге about</a></li>
+                    <li><a href="../vnutr.html">ссылка уровнем выше</a></li>
+                    <li><a href="../../vnutr.html">ссылка двумя уровнями выше</a></li>
+                    <li>Загрузить Minecraft и серверное ПО | Minecraft 
+                        <a href="/vnutr.html">Minecraft</a>
+                    </li>
+                    <li><a href="https://www.minecraft.net/ru-ru/download">ссылка на фрагмент стороннего сайта</a></li>
+                    <li><img src="image.jpg" usemap="#plant" width="200">
+                        <map name="plant">
+                            <area shape="rect" coords="0,0,82,126" href="https://kubsu.ru">
+                            <area shape="circle" coords="129,161,129" href="https://kubsu.ru">
+                            <area shape="poly" coords="200,32,240,32,240,42,210,64,210,74,200,32" href="https://kubsu.com">
+                        </map>
+                    </li>
+                    <li><a href="">ссылка с пустым href</a></li>
+                    <li><a>ссылка без href</a></li>
+                    <li><a href="https://kubsu.ru" rel="nofollow">ссылка с nofollow</a></li>
+                    <li><no-index><a href="https://kubsu.ru">запрещённая для индексации</a></no-index></li>
+                    <ol>
+                        <li><a href="https://kubsu.ru" title="сайт">сайт</a></li>
+                        <li><a href="https://kubsu.ru" title="другой сайт">другой сайт</a></li>
+                    </ol>
+                    <li><a href="ftp://admin:1234@google.com/index.doc">ссылка на FTP файл</a></li>
+                </ul>
+            </div>
+            <div class="form">
+                <h2>Форма</h2>
+                <form>
+                    <label>ФИО <input name="fio" type="text" id="fio"></label>
+                    <label>Телефон <input name="phone" type="tel"></label>
+                    <label>Email <input name="email" type="email"></label>
+                    <label>Дата рождения <input name="date" type="date"></label>
+                    
+                    <p>Пол:</p>
+                    <label for="male">Мужской</label>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="female">Женский</label>
+                    <input type="radio" id="female" name="gender" value="female"><br>
 
- <!-- Ссылки -->
-    <div class="links">
-        <h2>Список гиперссылок</h2>
-        <ul class="hyperlinks">
-            <li><a href="http://kubsu.ru">абсолютная гиперссылка на кубик</a></li>
-            <li><a href="https://kubsu.ru">https гиперссылка на кубик</a></li>
-            <li><a href=""><img src="image.jpg" alt="image" width="200"></a></li>
-            <li><a href="/vnutr.html">внутренняя страница</a></li>
-            <li><a href="/">главная страница</a></li>
-            <li><a href="#fio">фрагмент</a></li>
-            <li><a href="?name=malik&zanashih=5252&bebra=True">ссылка с 3 параметрами</a></li>
-            <li><a href="?id=67">ссылка с id</a></li>
-            <li><a href="./vnutr.html">относительная ссылка в текущем каталоге</a></li>
-            <li><a href="./about/vnutr.html">относительная ссылка в каталоге about</a></li>
-            <li><a href="../vnutr.html">ссылка уровнем выше</a></li>
-            <li><a href="../../vnutr.html">ссылка двумя уровнями выше</a></li>
-            <li>Загрузить Minecraft и серверное ПО | Minecraft 
-                <a href="/vnutr.html">Minecraft</a>
-            </li>
-            <li><a href="https://www.minecraft.net/ru-ru/download">ссылка на фрагмент стороннего сайта</a></li>
-            <li><img src="image.jpg" usemap="#plant" width="200">
-                <map name="plant">
-                    <area shape="rect" coords="0,0,82,126" href="https://kubsu.ru">
-                    <area shape="circle" coords="129,161,129" href="https://kubsu.ru">
-                    <area shape="poly" coords="200,32,240,32,240,42,210,64,210,74,200,32" href="https://kubsu.com">
-                </map>
-            </li>
-            <li><a href="">ссылка с пустым href</a></li>
-            <li><a>ссылка без href</a></li>
-            <li><a href="https://kubsu.ru" rel="nofollow">ссылка с nofollow</a></li>
-            <li><no-index><a href="https://kubsu.ru">запрещённая для индексации</a></no-index></li>
-            <ol>
-                <li><a href="https://kubsu.ru" title="сайт">сайт</a></li>
-                <li><a href="https://kubsu.ru" title="другой сайт">другой сайт</a></li>
-            </ol>
-            <li><a href="ftp://admin:1234@google.com/index.doc">ссылка на FTP файл</a></li>
-        </ul>
-    </div>
+                    <label>Любимый язык программирования
+                        <select id="lang" name="lang[]" multiple>
+                            <option value="1">Pascal</option>
+                            <option value="2">C</option>
+                            <option value="3">C++</option>
+                            <option value="4">JavaScript</option>
+                            <option value="5">PHP</option>
+                            <option value="6">Python</option>
+                            <option value="7">Java</option>
+                            <option value="8">Haskel</option>
+                            <option value="9">Clojure</option>
+                            <option value="10">Prolog</option>
+                            <option value="11">Scala</option>
+                        </select>
+                    </label>
 
-    <!-- Форма -->
-    <div class="form">
-        <h2>Форма</h2>
-        <form>
-            <label>ФИО <input name="fio" type="text" id="fio"></label>
-            <label>Телефон <input name="phone" type="tel"></label>
-            <label>Email <input name="email" type="email"></label>
-            <label>Дата рождения <input name="date" type="date"></label>
-            
-            <p>Пол:</p>
-            <label for="male">Мужской</label>
-            <input type="radio" id="male" name="gender" value="male" checked>
-            <label for="female">Женский</label>
-            <input type="radio" id="female" name="gender" value="female"><br>
+                    <label>Биография <textarea name="biography"></textarea></label>
+                    <label><input type="checkbox"> С контрактом ознакомлен</label>
+                    <button type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </main>
 
-            <label>Любимый язык программирования
-                <select id="lang" name="lang[]" multiple>
-                    <option value="1">Pascal</option>
-                    <option value="2">C</option>
-                    <option value="3">C++</option>
-                    <option value="4">JavaScript</option>
-                    <option value="5">PHP</option>
-                    <option value="6">Python</option>
-                    <option value="7">Java</option>
-                    <option value="8">Haskel</option>
-                    <option value="9">Clojure</option>
-                    <option value="10">Prolog</option>
-                    <option value="11">Scala</option>
-                </select>
-            </label>
-
-            <label>Биография <textarea name="biography"></textarea></label>
-            <label><input type="checkbox"> С контрактом ознакомлен</label>
-            <button type="submit">Сохранить</button>
-        </form>
-    </div>
-</div>
-</main>
-
-<footer>
-    &copy; Тлекемпашев Малик
-</footer>
-```
-
+    <footer>
+        &copy; Тлекемпашев Малик
+    </footer>
 </body>
 </html>
 
