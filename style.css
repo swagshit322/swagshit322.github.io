@@ -95,7 +95,7 @@ gap: 20px;
 }
 
 .main {
-flex-direction: row; /* три колонки */
+flex-direction: column; /* три колонки */
 justify-content: space-between;
 }
 
@@ -104,3 +104,4 @@ flex: 1;
 margin: 10px;
 }
 }
+
