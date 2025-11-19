@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
+    <title>WEB</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,58 +24,57 @@
         </div>
     </header>
 
-
+```
 <main class="main">
-        <!-- Таблица -->
+    <!-- Таблица -->
     <div class="table-container">
         <h2 class="text-tabl">Таблица</h2>
         <table>
             <thead>
                 <tr>
-                    <th class="tab">Level 1</th>
-                    <th>Level 2</th>
-                    <th class="tab">Level 3</th>
-                    <th>Level 4</th>
-                    <th class="tab">Level 5</th>
+                    <td class="tab" colspan="2">Level 1 + Level 2</td>
+                    <td class="tab">Level 3</td>
+                    <td>Level 4</td>
+                    <td class="tab">Level 5</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="tab" rowspan="6">privet</td>
-                    <td rowspan="3">poka</td>
-                    <td class="tab" rowspan="3">privet</td>
-                    <td>poka</td>
-                    <td class="tab">privet</td>
+                    <td class="tab blue-cell" rowspan="6">blue</td>
+                    <td rowspan="3">test</td>
+                    <td class="tab blue-cell" rowspan="3">blue</td>
+                    <td>test</td>
+                    <td class="tab blue-cell">blue</td>
                 </tr>
                 <tr>
-                    <td>poka</td>
-                    <td class="tab">privet</td>
+                    <td>test</td>
+                    <td class="tab blue-cell">blue</td>
                 </tr>
                 <tr>
-                    <td>poka</td>
-                    <td class="tab">privet</td>
+                    <td>test</td>
+                    <td class="tab blue-cell">blue</td>
                 </tr>
                 <tr>
-                    <td>poka</td>
-                    <td class="tab">privet</td>
-                    <td>poka</td>
-                    <td class="tab">privet</td>
+                    <td>test</td>
+                    <td class="tab blue-cell">blue</td>
+                    <td>test</td>
+                    <td class="tab blue-cell">blue</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">poka</td>
-                    <td class="tab" rowspan="2">privet</td>
-                    <td>poka</td>
-                    <td class="tab">privet</td>
+                    <td rowspan="2">test</td>
+                    <td class="tab blue-cell" rowspan="2">blue</td>
+                    <td>test</td>
+                    <td class="tab blue-cell">blue</td>
                 </tr>
                 <tr>
-                    <td>poka</td>
-                    <td class="tab">privet</td>
+                    <td>test</td>
+                    <td class="tab blue-cell">blue</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <!-- Ссылки -->
+ <!-- Ссылки -->
     <div class="links">
         <h2>Список гиперссылок</h2>
         <ul class="hyperlinks">
@@ -131,7 +129,7 @@
             <input type="radio" id="female" name="gender" value="female"><br>
 
             <label>Любимый язык программирования
-                <select name="lang[]" multiple>
+                <select id="lang" name="lang[]" multiple>
                     <option value="1">Pascal</option>
                     <option value="2">C</option>
                     <option value="3">C++</option>
@@ -154,12 +152,9 @@
 </main>
 
 <footer>
-    <div>
-        &copy; Малик Тлекемпашев
-    </div>
+    &copy; Тлекемпашев Малик
 </footer>
-
+```
 
 </body>
 </html>
-
