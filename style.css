@@ -1,21 +1,37 @@
-/* Стиль для голубых ячеек таблицы */
 .bg-light-blue {
     background-color: #ADD8E6 !important;
 }
 
-/* Дополнительные кастомные стили */
 .table-container table {
     font-size: 0.9rem;
 }
 
-.links ul li {
+.hyperlinks li {
     margin-bottom: 0.5rem;
 }
 
-/* Адаптивность изображений */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+/* Дополнительные стили для улучшения внешнего вида */
+.card {
+    margin-bottom: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+/* Выравнивание содержимого шапки и подвала по краям */
+.header-content,
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Подвал того же цвета, что и шапка */
+.custom-footer {
+    background-color: #0d6efd !important; /* Цвет как у bg-primary Bootstrap */
 }
 
 /* Mobile First - дополнительные настройки для мобильных устройств */
@@ -29,7 +45,7 @@
     }
 }
 
-/* Улучшение внешнего вида для десктопов */
+/* Улучшение внешнего вида для компов */
 @media (min-width: 992px) {
     .table-container,
     .links,
@@ -37,6 +53,3 @@
         height: fit-content;
     }
 }
-
-
-
