@@ -1,3 +1,4 @@
+/* Ваш существующий CSS */
 .bg-light-blue {
     background-color: #ADD8E6 !important;
 }
@@ -32,6 +33,9 @@
 /* Подвал того же цвета, что и шапка */
 .custom-footer {
     background-color: #0d6efd !important; /* Цвет как у bg-primary Bootstrap */
+    min-height: 60px; /* Добавляем минимальную высоту */
+    display: flex;
+    align-items: center;
 }
 
 /* Mobile First - дополнительные настройки для мобильных устройств */
@@ -45,7 +49,7 @@
     }
 }
 
-/* Улучшение внешнего вида для компов */
+/* Улучшение внешнего вида для десктопов */
 @media (min-width: 992px) {
     .table-container,
     .links,
